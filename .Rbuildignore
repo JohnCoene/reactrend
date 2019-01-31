@@ -8,3 +8,6 @@ package.json
 webpack.config.js
 yarn.lock
 docs
+index.Rmd
+reactrend.png
+_pkgdown.yml
