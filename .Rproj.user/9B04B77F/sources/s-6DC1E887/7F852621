@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548928216292.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1742750121",
+    "id" : "7F852621",
+    "lastKnownWriteTime" : 1548928215,
+    "last_content_update" : 1548928215,
+    "path" : "~/Documents/Packages/reactrend/inst/htmlwidgets/reactrend.yaml",
+    "project_path" : "inst/htmlwidgets/reactrend.yaml",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}

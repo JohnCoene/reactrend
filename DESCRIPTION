@@ -1,0 +1,17 @@
+Package: reactrend
+Title: 'react-trend' for R
+Version: 0.0.1
+Authors@R: 
+    person(given = "John",
+           family = "Coene",
+           role = c("aut", "cre"),
+           email = "jcoenep@gmail.com")
+Description: 'react-trend' for R
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    htmltools,
+    htmlwidgets,
+    reactR
+RoxygenNote: 6.1.1
