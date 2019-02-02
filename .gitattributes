@@ -1,1 +1,3 @@
 inst/htmlwidgets/lib/* linguist-vendored
+srcjs/* linguist-vendored
+.Rproj.user/* linguist-vendored
