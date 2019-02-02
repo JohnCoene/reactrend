@@ -15,6 +15,8 @@
 #' @param dash A vector of dash length.
 #' @param dash_offset Controls where dash starts.
 #' @param gradient Vector of colors to use as gradient.
+#' @param svg_width Width of svg.
+#' @param padding Padding for large \code{stroke_width}.
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},
 #'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
 #'   string and have \code{'px'} appended.
@@ -36,9 +38,9 @@
 #' @export
 reactrend <- function(data, draw = FALSE, draw_duration = 3000, draw_easing = "ease-in", 
                       stroke = "#000", stroke_width = 1, stroke_opacity = 1, smooth = FALSE,
-                      line_cap = c("butt", "round", "square"), radius = 10,
-                      dash = NULL, dash_offset = 10, gradient = NULL,
-                      width = NULL, height = NULL, elementId = NULL) {
+                      line_cap = c("butt", "round", "square"), radius = 10, padding = 8,
+                      dash = NULL, dash_offset = 10, gradient = NULL, svg_width = NULL,
+                      svg_height = NULL, width = NULL, height = "25%", elementId = NULL) {
   
   if(missing(data))
     stop("missing data", call. = FALSE)
@@ -59,7 +61,10 @@ reactrend <- function(data, draw = FALSE, draw_duration = 3000, draw_easing = "e
         gradient = gradient,
         autoDraw = draw,
         autoDrawDuration = draw_duration,
-        autoDrawEasing = draw_easing
+        autoDrawEasing = draw_easing,
+        svg_width = svg_width,
+        svg_height = svg_height,
+        padding = padding
       )
     )
   )
@@ -71,7 +76,10 @@ reactrend <- function(data, draw = FALSE, draw_duration = 3000, draw_easing = "e
     width = width,
     height = height,
     package = 'reactrend',
-    elementId = elementId
+    elementId = elementId,
+    sizingPolicy = htmlwidgets::sizingPolicy(
+      padding = 0
+    )
   )
 }
 

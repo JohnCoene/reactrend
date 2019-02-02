@@ -8,7 +8,8 @@ reactrend(data, draw = FALSE, draw_duration = 3000,
   draw_easing = "ease-in", stroke = "#000", stroke_width = 1,
   stroke_opacity = 1, smooth = FALSE, line_cap = c("butt", "round",
   "square"), radius = 10, dash = NULL, dash_offset = 10,
-  gradient = NULL, width = NULL, height = NULL, elementId = NULL)
+  gradient = NULL, svg_width = NULL, width = NULL, height = NULL,
+  elementId = NULL)
 }
 \arguments{
 \item{data}{A vector of numerical values.}
@@ -36,6 +37,8 @@ reactrend(data, draw = FALSE, draw_duration = 3000,
 \item{dash_offset}{Controls where dash starts.}
 
 \item{gradient}{Vector of colors to use as gradient.}
+
+\item{svg_width}{Width of svg.}
 
 \item{width, height}{Must be a valid CSS unit (like \code{'100\%'},
 \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
