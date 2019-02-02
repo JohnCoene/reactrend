@@ -12,3 +12,4 @@ docs
 index.Rmd
 reactrend.png
 _pkgdown.yml
+.gitattributes
