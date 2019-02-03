@@ -15,7 +15,7 @@
 #' @param dash A vector of dash length.
 #' @param dash_offset Controls where dash starts.
 #' @param gradient Vector of colors to use as gradient.
-#' @param svg_width Width of svg.
+#' @param svg_width,svg_height Width of svg.
 #' @param padding Padding for large \code{stroke_width}.
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},
 #'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
@@ -62,8 +62,8 @@ reactrend <- function(data, draw = FALSE, draw_duration = 3000, draw_easing = "e
         autoDraw = draw,
         autoDrawDuration = draw_duration,
         autoDrawEasing = draw_easing,
-        svg_width = svg_width,
-        svg_height = svg_height,
+        width = svg_width,
+        height = svg_height,
         padding = padding
       )
     )

@@ -7,8 +7,9 @@
 reactrend(data, draw = FALSE, draw_duration = 3000,
   draw_easing = "ease-in", stroke = "#000", stroke_width = 1,
   stroke_opacity = 1, smooth = FALSE, line_cap = c("butt", "round",
-  "square"), radius = 10, dash = NULL, dash_offset = 10,
-  gradient = NULL, svg_width = NULL, width = NULL, height = NULL,
+  "square"), radius = 10, padding = 8, dash = NULL,
+  dash_offset = 10, gradient = NULL, svg_width = NULL,
+  svg_height = NULL, width = NULL, height = "25\%",
   elementId = NULL)
 }
 \arguments{
@@ -31,6 +32,8 @@ reactrend(data, draw = FALSE, draw_duration = 3000,
 \item{line_cap}{Shape of line edges.}
 
 \item{radius}{Controls curve when \code{smooth} is set top \code{TRUE}.}
+
+\item{padding}{Padding for large \code{stroke_width}.}
 
 \item{dash}{A vector of dash length.}
 
