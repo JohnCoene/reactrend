@@ -8,7 +8,7 @@
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("JohnCoene/ractrend")
+remotes::install_github("JohnCoene/reactrend")
 ```
 
 ## Example
